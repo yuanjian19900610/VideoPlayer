@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">VideoPlayer</string>
+    <string name="small_problem">此终端点播功能尚未开通，敬请期待！</string>
+    <string name="player_url_empty">请指定播放视频的地址</string>
+    <string name="not_support">播放器不支持此设备</string>
+    <string name="str_confrim_exit_tip">您确认要退出吗?</string>
+    <string name="str_unregister_tip">该终端暂未注册，请先注册</string>
+
+    <string name="str_movie_url_error_tip">影片即将上线，敬请期待...</string>
+    <string name="str_net_error_tip">网络好像出错了，请检查网络!</string>
+    <string name="str_video_stream_error_tip">视频源信息中断了，请检查网络!</string>
+    <string name="str_data_error_tip">数据错误!</string>
+    <string name="str_video_url_isnull">视频地址为空</string>
+    <string name="str_setting_density_tip">设置成功，建议重启应用，效果更佳！</string>
+</resources>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_main_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/activity_margintop"
+        android:layout_weight="1.9"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="35dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/riv_thumb"
+                    android:layout_width="253dp"
+                    android:layout_height="354dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_loading_default_450_604" />
+
+                <ImageView
+                    android:id="@+id/iv_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_new_movie"
+                    android:visibility="gone" />
+
+
+            </FrameLayout>
+
+            <TextView
+                style="@style/tv_text_style"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="47dp"
+                android:layout_marginRight="47dp"
+                android:text="相关推荐"
+                android:textColor="#f2f2f2"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:id="@+id/tv_moviename"
+                style="@style/tv_text_style"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/tv_level_lbl"
+                style="@style/tv_text_style"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tv_level"
+                android:paddingRight="2dp"
+                android:text="评分:"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_level"
+                style="@style/tv_text_style"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+
+            <View
+                android:id="@+id/view_line1"
+                style="@style/line_horizontal"
+                android:layout_below="@+id/tv_level"
+                android:layout_marginTop="20dp" />
+
+
+            <TextView
+                android:id="@+id/lbl_releasedate"
+                style="@style/tv_text_style"
+                android:layout_below="@+id/view_line1"
+                android:layout_marginTop="10dp"
+                android:text="上映 : " />
+
+            <TextView
+                android:id="@+id/lbl_director"
+                style="@style/tv_text_style"
+                android:layout_below="@+id/lbl_releasedate"
+                android:layout_marginTop="10dp"
+                android:text="导演 : " />
+
+            <TextView
+                android:id="@+id/lbl_time"
+                style="@style/tv_text_style"
+                android:layout_below="@+id/lbl_director"
+                android:layout_marginTop="10dp"
+                android:text="片长 : " />
+
+
+            <TextView
+                android:id="@+id/tv_releasedate"
+                style="@style/tv_text_style"
+                android:layout_below="@+id/view_line1"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/lbl_releasedate" />
+
+            <TextView
+                android:id="@+id/tv_director"
+                style="@style/tv_text_style"
+                android:layout_below="@+id/tv_releasedate"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/lbl_director"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/tv_text_style"
+                android:layout_below="@+id/tv_director"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/lbl_time" />
+
+
+            <TextView
+                android:id="@+id/lbl_type"
+                style="@style/tv_text_style"
+                android:layout_below="@+id/view_line1"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="10dp"
+                android:text="类型 : " />
+
+            <TextView
+                android:id="@+id/lbl_tostar"
+                style="@style/tv_text_style"
+                android:layout_below="@+id/lbl_type"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="10dp"
+                android:text="主演 : " />
+
+            <TextView
+                android:id="@+id/lbl_country"
+                style="@style/tv_text_style"
+                android:layout_below="@+id/lbl_tostar"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="10dp"
+                android:text="国家地区 : " />
+
+            <TextView
+                android:id="@+id/tv_type"
+                style="@style/tv_text_style"
+                android:layout_below="@+id/view_line1"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/lbl_type"
+                android:ellipsize="end"
+                android:maxEms="25"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tv_tostar"
+                style="@style/tv_text_style"
+                android:layout_below="@+id/tv_type"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/lbl_type"
+                android:ellipsize="end"
+                android:maxEms="25"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tv_country"
+                style="@style/tv_text_style"
+                android:layout_below="@+id/tv_tostar"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/lbl_country"
+                android:ellipsize="end"
+                android:maxEms="25"
+                android:visibility="gone"
+                android:maxLines="1" />
+
+            <ImageView
+                android:id="@+id/iv_source"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/tv_tostar"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/lbl_country" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/tv_text_style"
+                android:layout_below="@+id/lbl_country"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:maxEms="150"
+                android:maxLines="3" />
+
+            <LinearLayout
+                android:id="@+id/layout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_description"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/start_btn_selector"
+                    android:focusableInTouchMode="true"
+                    android:text="">
+
+                    <requestFocus />
+                </Button>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="vertical">
+
+
+        <GridView
+            android:id="@+id/gv_othermovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:cacheColorHint="#00000000"
+            android:columnWidth="130dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:listSelector="@drawable/icon_thumb_bg_press"
+            android:numColumns="8"
+            android:padding="0dp"
+            android:stretchMode="spacingWidthUniform"
+            android:verticalSpacing="15dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="180dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.scott.vp.weigit.FocusFrameLayout
+        android:id="@+id/ffl_movie"
+        android:layout_width="270dp"
+        android:layout_height="150dp"
+        android:focusable="true">
+
+
+        <com.scott.vp.weigit.RoundRectImageView
+            android:id="@+id/riv_thumb"
+            android:layout_width="268dp"
+            android:layout_height="148dp"
+            android:src="@drawable/icon_loading_default_260_120" />
+
+        <TextView
+            android:id="@+id/tv_moviename"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:maxLines="2"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="@drawable/shape_movie_name_tx_bg"
+            android:text="测试"
+            android:textSize="14sp"
+            android:textColor="#AAC6FE" />
+
+        <ImageView
+            android:id="@+id/iv_selected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/icon_thumb_bg_press"
+            android:visibility="gone" />
+
+    </com.scott.vp.weigit.FocusFrameLayout>
+</LinearLayout>

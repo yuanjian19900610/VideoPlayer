@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_movie"
+    android:layout_width="130dp"
+    android:layout_height="170dp"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/icv_thumb"
+        android:layout_width="130dp"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_loading_default_450_604" />
+
+
+    <TextView
+        android:id="@+id/tv_moviename"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="#66000000"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="速度与激情8"
+        android:textColor="@color/color_white"
+        android:textSize="14sp" />
+
+
+    <ImageView
+        android:id="@+id/iv_newtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_new_movie"
+        android:visibility="gone" />
+
+</RelativeLayout>

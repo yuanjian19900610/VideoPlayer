@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_movie"
+    android:layout_width="400dp"
+    android:layout_height="285dp"
+    android:gravity="center"
+    android:nextFocusUp="@+id/gv_first_category"
+    android:orientation="vertical">
+
+    <com.scott.vp.weigit.FocusFrameLayout
+        android:id="@+id/ffl_movie"
+        android:nextFocusUp="@+id/gv_first_category"
+        android:layout_width="369dp"
+        android:layout_height="250dp"
+        android:focusable="true">
+
+
+        <ImageView
+            android:id="@+id/iv_thumb"
+            android:layout_width="369dp"
+            android:layout_height="250dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_loading_default_556_375" />
+
+
+        <ImageView
+            android:id="@+id/iv_focus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/icon_thumb_bg_press"
+            android:visibility="gone" />
+
+
+    </com.scott.vp.weigit.FocusFrameLayout>
+
+</LinearLayout>
